@@ -4,7 +4,7 @@ public class Ponto {
     private  double y;
     private  double z;
     
-    
+    //teste pull
     //construtor padrao 
     public Ponto(){
          x = 0;
