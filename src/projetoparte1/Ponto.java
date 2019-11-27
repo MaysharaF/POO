@@ -11,7 +11,7 @@ public class Ponto {
          y = 0;
          z = 0;
     }
-    
+    //qwer
     //contrutor de incializacao
     public Ponto(double x, double y, double z){
         this.x = x;
