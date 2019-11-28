@@ -6,7 +6,7 @@ public class Ponto {
     
     //teste pull
     //construtor padrao 
-    public Ponto(){;
+    public Ponto(){
          x = 0;
          y = 0;
          z = 0;
@@ -54,10 +54,30 @@ public class Ponto {
     public String toString(){
         return getNome() + "(" + getX() + "," +  getY() + ","  + getZ() +  ")";
     }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Ponto other = (Ponto) obj;
+        if (Double.doubleToLongBits(this.x) != Double.doubleToLongBits(other.x)) {
+            return false;
+        }
+        if (Double.doubleToLongBits(this.y) != Double.doubleToLongBits(other.y)) {
+            return false;
+        }
+        return Double.doubleToLongBits(this.z) == Double.doubleToLongBits(other.z);
+    }
     
-    public boolean equals(Ponto p2){
-        return this.getX() == p2.getX() && this.getY() == p2.getY() && this.getZ() == p2.getZ();
-   }
+    
     
     public double dist(Ponto p){
         System.out.println();
