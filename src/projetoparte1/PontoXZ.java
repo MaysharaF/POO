@@ -2,25 +2,28 @@ package projetoparte1;
 /**
  *
  * @author shen
- * @param <T>
  */
 public class PontoXZ extends Ponto2D{
     private double x;
     private double y;
     private double z;
 
+    @Override
     public double getX() {
         return x;
     }
 
+    @Override
     public void setX(double x) {
         this.x = x;
     }
 
+    @Override
     public double getZ() {
         return z;
     }
 
+    @Override
     public void setZ(double z) {
         this.z = z;
     }
