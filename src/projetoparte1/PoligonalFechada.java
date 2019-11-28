@@ -8,14 +8,16 @@ package projetoparte1;
 /**
  *
  * @author shen
- * @param <T>
  */
-public class PoligonalFechada<T extends Poligonal> {
-    private double distUltimo;
-    private double distPrimeiro;
+public class PoligonalFechada extends Poligonal {
 
-    Object[] getComprimento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public PoligonalFechada(Ponto2D[] vertices) {
+        super(vertices);
     }
-    
+
+    @Override
+    public double getComprimento() {
+        int ultimo = this.vertices.length - 1;
+        return this.vertices[0].dist(this.vertices[ultimo]);
+    }
 }
