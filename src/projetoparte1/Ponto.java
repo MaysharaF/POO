@@ -6,12 +6,11 @@ public class Ponto {
     
     //teste pull
     //construtor padrao 
-    public Ponto(){
+    public Ponto(){;
          x = 0;
          y = 0;
          z = 0;
     }
-    //qwer
     //contrutor de incializacao
     public Ponto(double x, double y, double z){
         this.x = x;
@@ -59,6 +58,11 @@ public class Ponto {
     public boolean equals(Ponto p2){
         return this.getX() == p2.getX() && this.getY() == p2.getY() && this.getZ() == p2.getZ();
    }
+    
+    public double dist(Ponto p){
+        System.out.println();
+        return Math.sqrt(( Math.pow((p.getX() - this.getX()), 2) + Math.pow((p.getY() - this.getY()), 2) + Math.pow((p.getZ() - this.getZ()), 2)));
+    }
     
     
 }
