@@ -10,18 +10,22 @@ public class PontoYZ extends Ponto2D {
         this.z = z;
     }
 
+    @Override
     public double getY() {
         return y;
     }
 
+    @Override
     public void setY(double y) {
         this.y = y;
     }
 
+    @Override
     public double getZ() {
         return z;
     }
 
+    @Override
     public void setZ(double z) {
         this.z = z;
     }
