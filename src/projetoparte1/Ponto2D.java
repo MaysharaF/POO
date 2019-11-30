@@ -1,8 +1,8 @@
 package projetoparte1;
 public abstract class Ponto2D extends Ponto{
-    protected double X;
-    protected double Y;
-    protected double Z;
+    private double X;
+    private double Y;
+    private double Z;
     
     public Ponto2D(){}
     

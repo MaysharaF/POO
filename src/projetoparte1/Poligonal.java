@@ -7,12 +7,12 @@ package projetoparte1;
  */
 public class Poligonal<T extends Ponto2D> {
 
-    protected T[] vertices;
+    private T[] vertices;
     
 
     public Poligonal(T[] vertices) {
         if (vertices.length < 2) {
-            throw new IllegalArgumentException("Quantidade de vertices inválido!");
+            throw new IllegalArgumentException("Poligonal deve ter ao menos dois vértices");
         } else {
             this.vertices = vertices;
         }
@@ -39,10 +39,7 @@ public class Poligonal<T extends Ponto2D> {
     public double getComprimento() {
         double res = 0;
         int ultimo = this.vertices.length - 1;
-        if (this.vertices[0].X ==  this.vertices[ultimo].X && this.vertices[0].Y ==  this.vertices[ultimo].Y && this.vertices[0].Z ==  this.vertices[ultimo].Z) {
-            //poligonal fechada
-            return this.vertices[0].dist(this.vertices[ultimo]);
-        }
+        //aberta
         for(int i = 0; i <= ultimo; i++)
             res += this.vertices[i].dist(this.vertices[i+1]);
         return res;
