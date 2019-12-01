@@ -23,10 +23,10 @@ public class ProjetoParte1 {
         PontoYZ P2 = new PontoYZ(10, 2);
         PontoYZ P3 = new PontoYZ(10, 8);
         PontoYZ P4 = new PontoYZ(2, 8);
-        System.out.println("Comprimento da poligonal fechada=" );
+        System.out.println("Comprimento da poligonal fechada=" + );
         
-    }
-       
+        
+        
         
     }
     

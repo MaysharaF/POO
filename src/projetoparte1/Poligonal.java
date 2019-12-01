@@ -7,7 +7,7 @@ package projetoparte1;
  */
 public class Poligonal<T extends Ponto2D> {
 
-    private T[] vertices;
+    T[] vertices;
     
 
     public Poligonal(T[] vertices) {
